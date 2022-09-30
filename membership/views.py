@@ -71,7 +71,8 @@ def proc(request):
             print(mdses)
             print(type(mdses))
             if adname == name and adpass == passn:
-                if mdses == '0':
+                x =database.child('count').get().val()
+                if mdses == '0' and x > 0:
                     response = HttpResponse(content_type='application/ms-excel')
                     response['Content-Disposition'] = 'attachment; filename="IEEEMD.xls"'
                     wb = xlwt.Workbook(encoding='utf-8')
@@ -98,7 +99,7 @@ def proc(request):
                     wb.save(response)
                     return response
 
-                elif mdses == '1001':
+                elif mdses == '1001' and x > 0:
                     response = HttpResponse(content_type='application/ms-excel')
                     response['Content-Disposition'] = 'attachment; filename="IEEEMD.xls"'
                     wb = xlwt.Workbook(encoding='utf-8')
