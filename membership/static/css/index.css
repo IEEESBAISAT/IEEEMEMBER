@@ -1,0 +1,330 @@
+body{
+margin:0px;
+padding:0px;
+  background-image: url("/static/img/bg.jpg");
+
+  background-repeat: repeat;
+
+  background-size: 100%;
+}
+h1{
+
+position:absolute;
+top:10px;
+left:0;
+color:white;
+font-family: "Monaco", monospace;
+font-size: 10px;
+
+}
+.navbar{
+display: flex;
+align-items:center;
+justify-content:center;
+width: 100%;
+height: 250px;
+background: white;
+
+  background-image: url("/static/img/bg.jpg");
+
+  background-repeat: no-repeat;
+ background-position:bottom center;
+  background-size: cover;
+margin:0;
+padding:0;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.cut{
+position:absolute;
+top:40px;
+background:white;
+width:140px;
+height:140px;
+border-radius:20px;
+  background-image: url("/static/img/logo.png");
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.line1{
+position:absolute;
+top:230px;
+right:0;
+background:rgb(241,251,57);
+width:33%;
+height:20px;
+
+
+}
+.line2{
+position:absolute;
+top:230px;
+
+background:rgb(76,174,247);
+width:34%;
+height:20px;
+
+
+}
+.line3{
+position:absolute;
+top:230px;
+left:0;
+background:rgb(228,8,122);
+width:33%;
+height:20px;
+
+
+}
+.circle1{
+position:absolute;
+top:10px;
+left:10px;
+width: 100px;
+height:100px;
+border-radius:50%;
+background:rgb(228,8,122,.8);
+box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+animation: anim4 4s infinite alternate ease-in;
+animation-delay: .9s;
+}
+
+.circle2{
+position:absolute;
+top:55px;
+left:160px;
+width: 100px;
+height:100px;
+border-radius:50%;
+background:rgb(76,174,247,.8);
+box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+animation: anim3 4s infinite alternate ease-in;
+animation-delay: .9s;
+}
+
+.circle3{
+position:absolute;
+top:10px;
+right:10px;
+width: 100px;
+height:100px;
+border-radius:50%;
+background:rgb(228,8,122,.8);
+box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+animation: anim2 4s infinite alternate ease-in;
+}
+
+.circle4{
+position:absolute;
+top:55px;
+right:160px;
+width: 100px;
+height:100px;
+border-radius:50%;
+background:rgb(76,174,247,.8);
+box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+animation: anim2 4s infinite alternate ease-in;
+animation-delay: .9s;
+}
+
+
+.circle5{
+position:absolute;
+top:30px;
+right:370px;
+width: 100px;
+height:100px;
+border-radius:50%;
+background:rgb(241,251,57,.8);
+box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+animation: anim 4s infinite alternate ease-in;
+}
+.circle6{
+position:absolute;
+top:30px;
+left:370px;
+width: 100px;
+height:100px;
+border-radius:50%;
+background:rgb(228,8,122,.8);
+box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+animation: anim3 4s infinite alternate ease-in;
+}
+
+@keyframes anim{
+20%{
+top:60px;
+
+}
+40%{
+top:100px;
+
+}
+50%{
+bottom:20px;
+}
+60%{
+right:10%
+
+}
+
+70%{
+
+top:0;
+
+}
+to{
+bottom:20px;
+right:70%;
+
+
+}
+
+}
+
+@keyframes anim2{
+20%{
+top:30px;
+
+}
+40%{
+top:150px;
+
+}
+50%{
+bottom:70px;
+}
+60%{
+right:30%
+
+}
+
+70%{
+
+top:20;
+
+}
+to{
+bottom:50px;
+right:80%;
+
+
+}
+
+}
+
+@keyframes anim3{
+20%{
+top:60px;
+
+}
+40%{
+top:100px;
+
+}
+50%{
+bottom:20px;
+}
+60%{
+left:10%
+
+}
+
+70%{
+
+top:0;
+
+}
+to{
+bottom:20px;
+left:70%;
+
+
+}
+
+}
+
+@keyframes anim4{
+20%{
+top:30px;
+
+}
+40%{
+top:150px;
+
+}
+50%{
+bottom:70px;
+}
+60%{
+left:30%
+
+}
+
+70%{
+
+top:20;
+
+}
+to{
+bottom:50px;
+left:70%;
+
+
+}
+
+}
+.container{
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+width: 100%;
+
+
+
+}
+
+.container .contact{
+position:absolute;
+display:flex;
+align-items:center;
+justify-content:center;
+top:30px;
+width: 300px;
+height:500px;
+border-radius:20px;
+background:white;
+
+
+}
+@media screen and (max-width: 400px){
+
+.container .contact {
+
+position:relative;
+top:30px;
+width: 400px;
+height:500px;
+border-radius:20px;
+background:white;
+
+}
+@media screen and (max-width: 370px){
+
+.container .contact {
+
+position:relative;
+top:30px;
+width: 400px;
+height:450px;
+border-radius:20px;
+background:white;
+
+}
+
+}
